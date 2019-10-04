@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#contenedor {
+			display: grid; 
+			grid-template-columns:repeat(3, 1fr); 
+			grid-template-rows:1fr 0.5fr 1.5fr; 
+		}
+
+		div {border:1px solid blue;}
+
+		img {
+			background-size: cover;
+			background-position: center;
+		}
+		#contenedor {
+			grid-column-gap:15px; 
+			grid-row-gap:15px;
+
+		}
+		#fondo_alargado {
+			grid-column: 1/3;
+			grid-row: 1; 
+		}
+		#fondo_vertical {
+			grid-column: 3;
+			grid-row: 1/4; 
+		}
+		#texto {
+			grid-column: 1;
+			grid-row: 2/4 
+		}
+		#titulo {
+			grid-column: 2;
+			grid-row: 2;
+
+		}
+		
+	</style>
+	<script>
+	
+	</script>
+	
+</head>
+<body>
+	<div id='contenedor'> 
+		<div id='fondo_alargado'>
+			<img src="img/logo.png" alt="logo">
+		</div> 
+		<div id='fondo_vertical'>
+			<img src="img/media1.jpg" alt="imagen">
+		</div> 
+		<div id='texto'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptas modi porro, veniam, excepturi enim, ullam corporis aperiam optio cum recusandae explicabo ad aut error nulla aliquam sequi voluptates tempore!</div> 
+		<div id='titulo'>
+			<h1>ALCYON</h1>
+		</div> 
+		<div id='logo'>
+			<img src="img/puerta.jpg" alt="imagen">
+			
+		</div> 
+	</div>
+
+</body>
+
+
+</html>
